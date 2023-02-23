@@ -36,10 +36,10 @@ describe("Comprobación del dinero", function () {
             expect(monedas.esMonedaValida(0.05)).toBeTrue() // 5
             expect(monedas.esMonedaValida(0.10)).toBeTrue() // 6
             expect(monedas.esMonedaValida(0.20)).toBeTrue()
-            expect(monedas.esMonedaValida(0.50)).toBeTrue()
-            //expect(monedas.esMonedaValida(1)).toBeTrue()
-            //expect(monedas.esMonedaValida(2)).toBeTrue()
-            //expect(monedas.esMonedaValida(5)).toBeTrue()
+            expect(monedas.esMonedaValida(0.50)).toBeTrue() // 8
+            expect(monedas.esMonedaValida(1)).toBeTrue() // 9
+            expect(monedas.esMonedaValida(2)).toBeTrue() // 10
+            expect(monedas.esMonedaValida(5)).toBeTrue() // 11
             //expect(monedas.esMonedaValida(10)).toBeTrue()
             //expect(monedas.esMonedaValida(20)).toBeTrue()
             //expect(monedas.esMonedaValida(50)).toBeTrue()
