@@ -36,6 +36,9 @@ var monedas = module.exports = {};
  */
 monedas.esMonedaValida = function (valor) {
     // Escribir el código necesario para que vayan pasando las pruebas una a una.
+    if(valor == 0.05){
+        return true;
+    }
     return false;
 }
 
