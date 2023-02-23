@@ -23,7 +23,7 @@ A continuación:
 describe("Comprobación del dinero", function () {
     it("Valores negativos, 0 y null no deben ser legales",
         function () {
-            //expect(monedas.esMonedaValida()).toBeFalse()
+            expect(monedas.esMonedaValida()).toBeFalse()
             //expect(monedas.esMonedaValida(0)).toBeFalse()
             //expect(monedas.esMonedaValida(-10)).toBeFalse()
         });
