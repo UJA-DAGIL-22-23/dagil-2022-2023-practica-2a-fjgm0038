@@ -104,7 +104,7 @@ Started
 9 specs, 0 failures
 Finished in 0.012 seconds
 ```
-
+## Resultado del ejercicio
 Salida final:
 
 ```
