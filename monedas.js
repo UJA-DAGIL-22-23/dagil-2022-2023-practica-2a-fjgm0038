@@ -81,8 +81,9 @@ monedas.suficienteParaPagar = function (vectorMonedas, montante) {
     }
     if(montante > sumaMonedas){
         return 0;
+    }else {
+        return 1;
     }
-
 }
 
 /*
