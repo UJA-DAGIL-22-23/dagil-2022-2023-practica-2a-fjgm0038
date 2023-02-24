@@ -55,6 +55,9 @@ monedas.esMonedaValida = function (valor) {
  */
 monedas.suficienteParaPagar = function (vectorMonedas, montante) {
        // Escribir el código necesario para que vayan pasando las pruebas una a una.
+    if(montante < 0){
+        return -2;
+    }
     if(vectorMonedas == null){
         if(montante == 0){
             return 1;
@@ -68,13 +71,18 @@ monedas.suficienteParaPagar = function (vectorMonedas, montante) {
             return 0;
         }
     }
+
+    var sumaMonedas = 0;
     for(var i = 0; i < vectorMonedas.length; i++){
         if(!monedas.esMonedaValida(vectorMonedas[i])){
             return -1;
         }
+        sumaMonedas += vectorMonedas[i];
+    }
+    if(montante > sumaMonedas){
+        return 0;
     }
 
-    return -2;
 }
 
 /*

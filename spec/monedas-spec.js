@@ -98,6 +98,10 @@ describe("Pago de una factura:", function () {
     it("La suma del vector menor que el montante, devuelve 0",
         function () {
             // Escribe dos expect que para un vector de monedas válidas y un valor a pagar mayor que la suma de dichas monedas, conpruebe que devuelve 0
+            vCoins = [1]
+            expect(monedas.suficienteParaPagar(vCoins, 4)).toBe(0);
+            vCoins = [2, 5]
+            expect(monedas.suficienteParaPagar(vCoins, 17)).toBe(0);
         }
     );
     it("La suma del vector igual que el montante, devuelve 1",
