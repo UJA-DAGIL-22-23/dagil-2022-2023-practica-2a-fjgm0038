@@ -104,3 +104,24 @@ Started
 9 specs, 0 failures
 Finished in 0.012 seconds
 ```
+
+Salida final:
+
+```
+PS C:\Users\usuario\IdeaProjects\fjgm0038\dagil-2022-2023-practica-2a-fjgm0038> npm run test
+
+> dagil-2022-2023-practica-2a-fjgm0038@1.0.0 test
+> jasmine
+
+Aplicación MONEDAS
+==================
+Si intento pagar  10 € con las siguientes monedas [ 1,2,1,2,0.5,20,5 ] , el resultado es 2
+Randomized with seed 95232
+Started
+.........
+
+
+9 specs, 0 failures
+Finished in 0.018 seconds
+Randomized with seed 95232 (jasmine --random=true --seed=95232)
+```
