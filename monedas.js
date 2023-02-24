@@ -36,7 +36,8 @@ var monedas = module.exports = {};
  */
 monedas.esMonedaValida = function (valor) {
     // Escribir el código necesario para que vayan pasando las pruebas una a una.
-    if((valor*100) % 5 == 0 && valor > 0){
+    var validas = [0.05, 0.10, 0.20, 0.50, 1, 2, 5, 10, 20, 50, 100, 200, 500]
+    if( validas.includes(valor) && valor > 0){
         return true;
     }
     return false;
