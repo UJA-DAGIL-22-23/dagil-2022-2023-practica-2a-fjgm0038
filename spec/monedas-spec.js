@@ -79,6 +79,7 @@ describe("Pago de una factura:", function () {
             // Escribe el expect que para un vector vacío y 0, devuelva 1
             expect(monedas.suficienteParaPagar(vCoins, 0)).toBe(1);
             // Escribe el expect que para un vector vacío y un valor mayor que 0, devuelva 0
+            expect(monedas.suficienteParaPagar(vCoins, 7)).toBe(0);
             
         }
     );

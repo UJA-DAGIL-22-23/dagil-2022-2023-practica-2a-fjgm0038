@@ -56,7 +56,7 @@ monedas.suficienteParaPagar = function (vectorMonedas, montante) {
        // Escribir el código necesario para que vayan pasando las pruebas una a una.
     if(montante == 0){
         return 1;
-    }else if(montante > 1){
+    }else if(montante > 0){
         return 0;
     }
     return -2;
