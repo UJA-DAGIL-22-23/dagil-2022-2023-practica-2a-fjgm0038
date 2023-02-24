@@ -6,6 +6,7 @@
 ## Resultado del ejercicio
 * **Alumno**: Francisco Javier Gálvez Marín
 * **Correo**: fjgm0038@red.ujaen.es
+
 Salida final:
 
 ```
