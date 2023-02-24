@@ -54,11 +54,25 @@ monedas.esMonedaValida = function (valor) {
  */
 monedas.suficienteParaPagar = function (vectorMonedas, montante) {
        // Escribir el código necesario para que vayan pasando las pruebas una a una.
-    if(montante == 0){
-        return 1;
-    }else if(montante > 0){
-        return 0;
+    if(vectorMonedas == null){
+        if(montante == 0){
+            return 1;
+        }else if(montante > 0){
+            return 0;
+        }
+    }else if(vectorMonedas.length == 0){
+        if(montante == 0){
+            return 1;
+        }else if(montante > 0){
+            return 0;
+        }
     }
+    for(var i = 0; i < vectorMonedas.length; i++){
+        if(!monedas.esMonedaValida(vectorMonedas[i])){
+            return -1;
+        }
+    }
+
     return -2;
 }
 

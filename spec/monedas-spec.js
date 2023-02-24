@@ -86,7 +86,9 @@ describe("Pago de una factura:", function () {
 
     it("Una moneda no válida en el vector, devuelve -1",
         function () {
+            var vCoins = [5, 2, -1];
             // Escribe el expect que para un vector conteniendo un valor de moneda negativo, devuelve -1
+            expect(monedas.suficienteParaPagar(vCoins, 2)).toBe(-1);
             // Escribe el expect que para un vector conteniendo un valor de moneda positivo, pero no válido, devuelve -1
         }
     );
